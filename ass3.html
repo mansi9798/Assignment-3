@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>
+            Assignment 3
+        </title>
+    </head>
+    <body>
+        <h1>Assignment 3 question 1</h1>
+        <script>
+             var library=[
+                 {
+                    author:'Bill Gates',
+                    title:'The Road Ahead',
+                    readingstatus:true
+                 },
+                 {
+                    author:'Steve Jobs',
+                    title:'Walter Isaacson',
+                    readingstatus:true
+                 },
+                 {
+                    author:'Suzanne Collins',
+                    title:'Mockingjay:The Final Book of The Hunger Games',
+                    readingstatus:false
+                 }
+
+                 
+             ];
+
+             var data=prompt("Which Book You wanna Read? \n 1.The Road Ahead \n 2.Walter Isaacson \n 3.Mockingjay:The Final Book of The Hunger Games");
+             if(data=='The Road Ahead'){
+                // alert("Already read 'Bill Gates' By The Road Ahead ");
+                console.log("Already read" ,library[0].author ,"By" ,library[0].title);
+             }
+             else if(data=='Walter Isaacson'){
+                console.log("Already read",library[1].author,"By" ,library[1].title ,". You still need to read 'Mockingjay:The Final Book of The Hunger Games' by Suzanne Collins." );
+             }
+           
+        </script>
+    </body>
+</html>
